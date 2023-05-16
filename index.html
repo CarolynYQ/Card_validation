@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Valida tu tarjeta de crédito </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/swords.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header><h1>INGRESA EL NUMERO DE TU TARJETA</h1></header>
+    <section class="frontal">
+      <div class="container">
+        <form>
+          <div class="card">
+            <div class="logo_marca"><img src="images/visa.png"></div>
+            <img src="images/chip-tarjeta.png" class="chip" alt="chip card">
+            <label for="form">Número de tarjeta</label>
+            <input type="text" inputmode="numeric" id="cardNumber" class="values"  pattern="[0-9]+" autofocus="autofocus" required/>
+            <i class="fas fa-exclamation-circle failure-icon" style="display: none"></i>
+            <i class="far fa-check-circle success-icon" style="display: none" ></i>
+            <div class="error"></div>
+            <div class="exito"></div>
+            <button type ="button" id="btr">Validar</button>
+          </div>        
+        </form>
+            </div>
+    </section>
+
+   
+    
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
